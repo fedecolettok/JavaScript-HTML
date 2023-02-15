@@ -125,6 +125,8 @@ btnDisminuir.addEventListener('click', () => {
    span.textContent = contador
 })*/
 
+
+/*
 //Event delegation
 const container = document.querySelector('.container') //accedemos a la seccion donde se encuentran los botones
 const span = document.getElementById('resultados')
@@ -138,4 +140,5 @@ container.addEventListener('click', (e) => {
       contador --;
       span.textContent = contador
    } e.stopPropagation()
-})
+})*/
+
