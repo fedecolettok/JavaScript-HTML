@@ -6,65 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScript + HTML</title>
   <link rel="stylesheet" href="CSS/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 </head>
 <body>
-  <h1 class="titulo1">Java HTML DOM</h1>
-  </div>
-  <p>
-    <p>Con el HTML DOM, JavaScript puede acceder y cambiar todos los elementos de un documento HTML.</p>
-    <p>El HTML DOM es un modelo <b>objeto</b> estándar y una interfaz de programación para HTML. Este define:</p>
-    <ul>
-      <li>los elementos HTML como <b>objetos</b>;</li>
-      <li>las <b>propiedades</b> de todos los elementos HTML;</li>
-      <li>los <b>métodos</b> para acceder a los elementos HTML; y</li>
-      <li>los <b>eventos</b> para cualquier elemento HTML;</li>
-    </ul>
-  </p>
-
-  <h2>1 El HTML DOM (Documet Object Model)</h2>
-  <p>Cuando cargamos una página web, el buscador crea un <b>D</b>ocument <b>O</b>bject <b>M</b>odel) de la página.</p>
-  <p>El modelo <b>HTML DOM</b> se construye como un <em>árbol de objetos</em>:</p>
-  <img src="/Images/HTML DOM tree.gif" alt="HTML DOM tree">
-  <p>Con el modelo de objeto, JavaScript accede a todo lo necesario para crear un HTML dinámico. JavaScript puede</p>
-  <ul>
-    <li>cambiar todos los elementos HTML de la página;</li>
-    <li>cambiar todos los atributos HTML de la página;</li>
-    <li>cambiar todos los estilos CSS de la página;</li>
-    <li>remover los elementos y atributos HTML existentes;</li>
-    <li>añadir nuevos elementos HTML y atributos;</li>
-    <li>"reaccionar" (<em>react</em>) a todos los eventos HTML existentes en la página;</li>
-    <li>crear nuevos eventos HTML en la página;</li>
+  <h1>Compras</h1>
+  <ul id="lista">
+    <template id="template-li">
+      <li class="list">
+        <b>Nombre: </b><span class="text-danger">Descripción...</span>
+      </li>
+    </template>
   </ul>
 
-
-  <h2>2 Métodos HTML DOM</h2>
-  <p>Los métodos HTML DOM son <b>acciones</b> que puede realizar en elementos HTML. Las propiedades HTML DOM son <b>valores</b> de elementos HTML que puede reestablecer o cambiar.</p>
-
-  <h3>2.1 La interfaz de programación DOM</h3>
-  <p>Se puede acceder al DOM HTML con JavaScript (y con otros lenguajes de programación). En el DOM, todos los elementos HTML se definen como <b>objetos</b>. La interfaz de programación se compone de las propiedades y métodos de cada objeto.</p>
-  <p>Una <b>propiedad</b> es un valor que puedes obtener o definir (como cambiar el contenido de un elemento HTML).</p>
-  <p>Un <b>método</b> es una acción que puedes hacer (como añadir o remover un elemento HTML).</p>
-
-  <h5>Ejemplo 1</h5>
-  <section class="ejemplo">
-    <code>
-      &lt;p id="demo"&gt;&lt;/p&gt;
-      <br>
-      <br>
-      &lt;script> <br>
-        document.getElementById("demo").innerHTML = "Hello world!"<br>
-        &lt;/script&gt;
-    </code>
+  <section class="container py-5 text-center bg-warning">
+    <h1>Contador</h1>
+    <button type="button" class="btn btn-info">Aumentar</button>
+    <button type="button" class="btn btn-danger">Disminuir</button>
+    <h4 class="my-5">Contador: <span id="resultados">0</span></h4>
   </section>
-  <code></code>
-  <p>En este ejemplo, <code>getElementById</code> es un <b>método</b> y <code>innerHTML</code> es una <b>propiedad</b>.</p>
 
-  <h4>El método <code>getElementById</code></h4>
-  <p>La manera más comun de acceder a un elemento HTML es usando el <code>id</code> del elemento. En el ejemplo, el método es usado para acceder al elemento cuyo <code>id</code> es <code>"demo"</code>.</p>
 
-  <h4>La propiedad <code>innerHTML</code></h4>
-  <p>La manera más fácil de acceder al contenido de un elemento es mediante la propiedad <code>innerHTML</code>. Esta propiedad es útil para obtener o reemplazar el contenido de elementos HTML.</p>
 
-  
+  <script src="JavaScript/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </body>
 </html>
